@@ -35,7 +35,9 @@ public class Main {
         // Définition du ghost
         Ghost malo = new Ghost("MaloéLeGhost", 189, 150, 30);
         // Attaque ghost sur personnage
-        malo.attaquerAMainsNues(margaux);
+//        malo.attaquerAMainsNues(margaux);
+        GhostAdapter maloGhostAdapter = new GhostAdapter(malo);
+        maloGhostAdapter.attaquerAMainsNues(margaux);
 
 //        personnageToGhostAdapter.attaquer()
 

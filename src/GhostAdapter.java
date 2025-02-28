@@ -3,6 +3,8 @@ public class GhostAdapter extends Personnage {
 
     public GhostAdapter(Ghost ghost) {
         this.ghost = ghost;
+        this.nom = ghost.getName();
+        this.degats = ghost.getOpacity() * ghost.getFlightHeight();
     }
 
 }
